@@ -1,31 +1,42 @@
 import Head from 'next/head'
 import React from 'react'
+import Image from 'next/image';
 
 export default function index() {
   return (
     <>
     <Head>
-      <title>Coming Soon</title>
-      <meta name="description" content="Coming Soon" />
+      <title>Warning</title>
+      <meta name="description" content="Warning" />
       <link rel="icon" href="/favicon.ico" />
-      
-
     </Head>
     <div style={{
       height: '100vh',
       width: '100vw',
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      flexDirection:'column'
 
     }}>
+      <Image
+      src="/warning.png"
+      alt='warning icon'
+      height={100}
+      width={100}
+      />
       <h1
         style={{
-          fontSize: '10rem',
-          color: 'white',
-          textShadow: '0 0 10px white'
+          fontSize: '2rem',
+          color: 'black',
+          marginTop:"6px",
+          marginBottom:"4px"
         }}
-      >Coming Soon</h1>
+      >Alert</h1>
+      <p style={{marginBottom:"8px"}}>
+      The VPS is setting Up .
+      </p>
+      <p>Please check in few hours..</p>
       </div>
       </>
   )
