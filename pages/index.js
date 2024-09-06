@@ -6,10 +6,10 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>DPBF</title>
+        <title>Sprout Innovation</title>
         <meta
           name="description"
-          content="Deppak Prakash Baskota Foundation Website"
+          content="Sprout Innovation Website"
         />
         <link rel="icon" href="/logo.svg" />
       </Head>
@@ -23,7 +23,6 @@ export default function index() {
           flexDirection: "column",
         }}
       >
-        <Image src="/logo.png" alt="logo" height={280} width={280} />
         <h1
           style={{
             fontSize: "2rem",
