@@ -7,10 +7,7 @@ export default function index() {
     <>
       <Head>
         <title>Sprout Innovation</title>
-        <meta
-          name="description"
-          content="Sprout Innovation Website"
-        />
+        <meta name="description" content="Sprout Innovation Website" />
         <link rel="icon" href="/logo.svg" />
       </Head>
       <div
@@ -23,17 +20,29 @@ export default function index() {
           flexDirection: "column",
         }}
       >
-        <h1
+        <div
           style={{
-            fontSize: "2rem",
-            color: "black",
-            marginTop: "24px",
-            marginBottom: "8px",
-            color: "#005050",
+            width: "40vw",
+            height: "200px",
+            position: "relative",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
-          Comming Soon...
-        </h1>
+          <Image src="/logo.png" alt="Logo" layout={"fill"} objectFit="contain" />
+        </div>
+        {/* <h1
+          style={{
+            fontSize: "5rem",
+            color: "black",
+            marginTop: "42px",
+            marginBottom: "8px",
+            color: "#2780B5",
+          }}
+        >
+          Coming Soon
+        </h1> */}
       </div>
     </>
   );
